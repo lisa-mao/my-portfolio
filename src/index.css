@@ -7,3 +7,16 @@
 .backgroundNight {
     background-image: url("images/portfoliograssfieldnight.png");
 }
+
+/*:root{*/
+/*    --green-border: #A2C579;*/
+/*    --white-border: #FFFFDD;*/
+/*    --white-bg: #FFFFDD;*/
+/*}*/
+
+/*[data-theme="dark"] {*/
+/*    --greenborder: #E1FFBB;*/
+/*    --darkblue-border: #074799;*/
+/*    --darkblue-bg: #074799;*/
+/*    --text-color: #E1FFBB;*/
+/*}*/
