@@ -1,56 +1,56 @@
 import { HashRouter} from 'react-router-dom';
-import Intro from "./Intro.jsx";
-import AboutMe from "./AboutMe.jsx";
-import MyProjects from "./MyProjects.jsx";
-import Contact from "./Contact.jsx";
-import {useEffect, useState} from "react";
-import Sun from './images/sun.png'
-import Moon from './images/moon.png'
+import Pig from './images/pig.gif'
+import Flower from './images/flowericon.png'
+import './index.css'
+import Clock from "./Clock.jsx";
 
 function App() {
-    const [activeModal, setActiveModal] = useState(null)
-    const [daytime, setDaytime] = useState(true)
+    // const [activeModal, setActiveModal] = useState(null)
+    // const closeModal = () => setActiveModal(null)
 
 
-    const closeModal = () => setActiveModal(null)
-
-    useEffect(() => {
-        if (daytime) {
-            document.documentElement.classList.remove('dark');
-        } else {
-            document.documentElement.classList.add('dark');
-        }
-    }, [daytime]);
     return (
         <HashRouter>
-            <main className={`${daytime ? `backgroundDay` : `backgroundNight`} bg-cover bg-no-repeat h-screen w-screen`}>
-                <button onClick={() => setDaytime(!daytime)}>
-                    <img src={daytime ? Sun : Moon} alt={daytime ? "Sun" : "Moon"} className="size-40 object-top-right hover:cursor-pointer
-                 scale-50"/>
-                </button>
-
-                <section className="  flex justify-center items-center ">
+            <main className="h-screen w-screen background flex justify-center items-center">
 
 
-                    <div className="relative">
-                        <Intro onOpen={setActiveModal}/>
-                        {activeModal === 'aboutMe' && (
-                            <AboutMe onClose={(closeModal)}/>
-                        )}
+                <div className="bg-[#c5a9bf] h-180 w-280 rounded-2xl border-[#372d36] border-solid border-3">
+                    <div className="bg-[#372d36] h-20 border-[#372d36] border-solid border-t-2 border-b-2 p-3 flex items-center ">
 
-                        {activeModal === 'myProjects' && (
-                            <MyProjects onClose={(closeModal)}/>
-                        )}
+                        <div className="flex flex-row w-full items-center">
+                            <img className="size-10" src={Flower} alt="flowerLogo"/>
 
-                        {activeModal === 'contact' && (
-                            <Contact onClose={(closeModal)}/>
-                        )}
-
-
+                            <div className="flex justify-between flex-1 items-center ml-4">
+                                <h1 className="jersey-10-regular gradient text-4xl">Welcome to my portfolio</h1>
+                                <Clock/>
+                            </div>
+                        </div>
                     </div>
+                </div>
 
 
-                </section>
+                    {/*<div className="relative">*/}
+                    {/*    <Intro onOpen={setActiveModal}/>*/}
+                    {/*    {activeModal === 'aboutMe' && (*/}
+                    {/*        <AboutMe onClose={(closeModal)}/>*/}
+                    {/*    )}*/}
+
+                    {/*    {activeModal === 'myProjects' && (*/}
+                    {/*        <MyProjects onClose={(closeModal)}/>*/}
+                    {/*    )}*/}
+
+                    {/*    {activeModal === 'contact' && (*/}
+                    {/*        <Contact onClose={(closeModal)}/>*/}
+                    {/*    )}*/}
+
+
+                    {/*</div>*/}
+
+                    {/*<div>*/}
+                    {/*    <img alt="pig" className="size-30" src={Pig}/>*/}
+                    {/*</div>*/}
+
+
                 {/*<Footer/>*/}
             </main>
         </HashRouter>

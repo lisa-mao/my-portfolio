@@ -1,12 +1,27 @@
 @import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
 
-.backgroundDay {
-    background-image: url("images/portfoliograssfield.png");
+.background {
+    background-image: url("./images/kuromi-pattern.jpg");
+    background-size: 80px 80px,80px 80px;
+    background-repeat: repeat;
+
 }
 
-.backgroundNight {
-    background-image: url("images/portfoliograssfieldnight.png");
+.gradient {
+    background: linear-gradient(to right,#c5a9bf , #ffeaef);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    text-shadow: 0px 0px 23px #372d36;
 }
+
+.jersey-10-regular {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 440;
+    font-style: normal;
+}
+
 
 /*:root{*/
 /*    --green-border: #A2C579;*/
