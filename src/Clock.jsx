@@ -1,41 +1,50 @@
 import './index.css'
-import { useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 
 function Clock() {
-        const [time, setTime] = useState()
+    const [time, setTime] = useState("");
+    const [date, setDate] = useState("");
 
-        useEffect(() => {
+    useEffect(() => {
 
-            setInterval(() => {
+        const updateClock = () => {
+            const now = new Date();
 
-                const dateObject = new Date()
-
-                const day = dateObject.getDate()
-                const month = dateObject.getMonth()
-
-
-                const hour = dateObject.getHours().toString().padStart(2,'0')
-                const minute = dateObject.getMinutes().toString().padStart(2,'0')
+            const monthName = now.toLocaleString('eng', {month: 'long'})
+            const day = now.getDate().toString().padStart(2, '0');
+            const currentDate = `${day} ${monthName}`;
 
 
-                const currentTime =day + '/' + (month + 1) + "-" +  hour + ' : ' + minute
+            const hour = now.getHours().toString().padStart(2, '0');
+            const minute = now.getMinutes().toString().padStart(2, '0');
+            const currentTime = `${hour} : ${minute}`;
 
-                setTime(currentTime)
-            }, 1000)
-
-        }, [])
-
-    return (
-        <div>
+            setDate(currentDate);
+            setTime(currentTime);
+        };
 
 
+        updateClock();
+
+
+        const intervalId = setInterval(updateClock, 1000);
+
+        return () => clearInterval(intervalId);
+    }, []);
+
+return (
+    <div className="space-between flex  ">
+
+  <span className="jersey-10-regular gradient text-4xl pr-4">
+            {date}
+        </span>
 
         <span className="jersey-10-regular gradient text-4xl">
             {time}
         </span>
 
-        </div>
-    )
+    </div>
+)
 }
 
 export default Clock
