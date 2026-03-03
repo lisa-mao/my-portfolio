@@ -30,6 +30,31 @@
     font-style: normal;
 }
 
+.jerseyTab {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 440;
+    font-size: large;
+    font-style: italic;
+}
+
+.jerseyStats {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 100;
+    font-size: large;
+    font-style: normal;
+}
+
+.folder {
+    clip-path: polygon(0 0 , 89% 0, 100% 69%, 100% 100%,0 100% ,0 100%);
+}
+
+.tab {
+    clip-path: polygon(0 0 , 88% 0, 100% 65%, 64% 100%,0 100% ,0 100%);
+    background: #372d36;
+    height: 48px;
+    width: 132px;
+}
+
 
 /*:root{*/
 /*    --green-border: #A2C579;*/

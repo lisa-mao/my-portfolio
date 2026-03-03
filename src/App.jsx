@@ -4,6 +4,7 @@ import Flower from './images/flowericon.png'
 import './index.css'
 import Clock from "./Clock.jsx";
 import FileIcon from './images/file-icon.png'
+import AboutMe from "./AboutMe.jsx";
 
 function App() {
 
@@ -27,7 +28,7 @@ function App() {
                             </button>
                         </div>
                         <div
-                            className="bg-[#372d36] h-20 border-[#372d36] border-solid border-t-2 border-b-2 p-3 flex items-center ">
+                            className="bg-[#372d36] h-20 border-[#372d36] border-solid border-t border-b-1 p-3 flex items-center ">
 
                             <div className="flex flex-row w-full items-center">
                                 <img className="size-10" src={Flower} alt="flowerLogo"/>
@@ -43,26 +44,30 @@ function App() {
 
                         <div className="flex gap-2 flex-row items-start z-0 m-2">
 
-                            <div className="bg-amber-100 h-10 w-32 rounded-2xl shadow-sm border border-amber-200">
-                                <h1 className="pl-2">About me</h1>
-                            </div>
-                            <div className="bg-amber-100 h-10 w-32 rounded-2xl shadow-sm border border-amber-200">
-                                <h1>My projects</h1>
-                            </div>
-                            <div className="bg-amber-100 h-10 w-32 rounded-2xl shadow-sm border border-amber-200">
-                                <h1>Interests</h1>
+                        <div className="tab">
+                            <div className="bg-amber-100 h-10 w-32 rounded-tr-md folder border-[#372d36] border-solid border-2 ">
+                                <h1 className="pl-2 jerseyTab text-[#372d36]">About me</h1>
                             </div>
                         </div>
 
+                            <div className="tab">
+                            <div className="bg-amber-100 h-10 w-32 rounded-tr-md folder border-[#372d36] border-solid border-2 ">
+                                <h1 className="pl-2 jerseyTab text-[#372d36]">My projects</h1>
+                            </div>
+                        </div>
 
-                        <div className="relative z-10 -mt-5 ml-2 mr-2">
+                            <div className="tab">
+                            <div className="bg-amber-100 h-10 w-32 rounded-tr-md  folder  border-[#372d36] border-solid border-2 ">
+                                <h1 className="pl-2 jerseyTab text-[#372d36]">Interests</h1>
+                            </div>
+                        </div>
+                    </div>
 
-                            <div className="bg-amber-100  rounded-b-md rounded-tr-md h-125   p-6 flex items-start justify-center">
+                        <div className="relative z-10 -mt-7 ml-2 mr-2">
+
+                            <div className="bg-amber-100 border-[#372d36] border-solid border-2  rounded-b-md rounded-tr-md h-125   p-6 flex items-start ">
                                 <div className="text-center">
-                                    <h2 className="text-2xl font-bold text-amber-900 jersey">WINDOW</h2>
-                                    <p className="text-amber-800/60 text-sm mt-2">
-
-                                    </p>
+                                    <AboutMe/>
                                 </div>
                             </div>
                         </div>
