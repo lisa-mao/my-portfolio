@@ -1,4 +1,4 @@
-import './index.css'
+import '../index.css'
 import {useEffect, useState} from "react";
 
 function Clock() {
@@ -35,11 +35,11 @@ function Clock() {
 return (
     <div className="space-between flex  ">
 
-  <span className="jersey-10-regular gradient text-4xl pr-4">
+  <span className="jersey-10-regular select-none gradient text-4xl pr-4">
             {date}
         </span>
 
-        <span className="jersey-10-regular gradient text-4xl">
+        <span className="jersey-10-regular select-none gradient text-4xl">
             {time}
         </span>
 

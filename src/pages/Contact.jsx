@@ -1,4 +1,4 @@
-import closeButton from './images/closebutton.png'
+import closeButton from '../images/closebutton.png'
 function Contact({onClose}) {
     return (
         <section className="fixed inset-y-70 inset-x-350 flex  justify-end z-30a text-black bg-[#FFFFFF] border-[#A2C579] border-solid border-6 max-w-120 max-h-150 w-60 h-40 ">
