@@ -5,8 +5,14 @@ import SpiderChart from "../components/Chart.jsx";
 function AboutMe() {
 
     return (
-        <section className=" flex  flex-row text-black">
-
+        <section className=" flex items-center gap-2 text-black">
+            <div className="bg-white h-110 w-110 flex justify-center items-center  border-[#372d36] rounded-xl border-solid border-2">
+                <SpiderChart/>
+            </div>
+            <div className="bg-white flex flex-col  border-[#372d36] rounded-xl border-solid border-2  h-100 w-50" >
+                <h1 className="noto-sans-jp- tracking-[0.15rem] bg-black p-2 text-white">What is in my backpack</h1>
+                <div>ITEMS</div>
+            </div>
             <div className="flex  flex-col">
 
                 <div className="flex  flex-row ">
@@ -21,9 +27,7 @@ function AboutMe() {
                 </div>
 
             </div>
-            <div className="bg-white h-110 w-110 ml-50 flex justify-center items-center  border-[#372d36] rounded-xl border-solid border-2">
-                <SpiderChart/>
-            </div>
+
         </section>
     );
 }
