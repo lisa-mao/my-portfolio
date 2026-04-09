@@ -53,14 +53,17 @@
                }
 
 .folder {
-    clip-path: polygon(0 0 , 89% 0, 100% 69%, 100% 100%,0 100% ,0 100%);
+    clip-path: polygon(0 0 , 92% 0, 98% 98%, 100% 100%,0 98% ,0 100%);
+    height: 39px;
+    width: 134px;
+
 }
 
 .tab {
-    clip-path: polygon(0 0 , 88% 0, 100% 65%, 64% 100%,0 100% ,0 100%);
+    clip-path: polygon(0 0 , 89% 0, 96% 90%, 95% 90%,0 90% ,0 100%);
     background: #372d36;
-    height: 48px;
-    width: 132px;
+    height: 36px;
+    width: 140px;
 }
 
 

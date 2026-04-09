@@ -3,7 +3,8 @@ import './index.css'
 import AboutMe from "./pages/AboutMe.jsx";
 import Layout from "./components/Layout.jsx";
 import MyProjects from "./pages/MyProjects.jsx";
-import Interest from "./pages/Interest.jsx";
+import Skills from "./pages/Skills.jsx";
+import Contact from "./pages/Contact.jsx";
 
 const router = createHashRouter([
     {
@@ -18,8 +19,12 @@ const router = createHashRouter([
                 element: <MyProjects/>
             },
             {
-                path: "/interests",
-                element: <Interest/>
+                path: "/skills",
+                element: <Skills/>
+            },
+            {
+                path: "/contact",
+                element: <Contact/>
             },
         ]
 

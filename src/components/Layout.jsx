@@ -3,6 +3,8 @@ import Flower from "../images/flowericon.png";
 import Clock from "./Clock.jsx";
 import AboutMe from "../pages/AboutMe.jsx";
 import {Link, Outlet} from "react-router-dom";
+import {useState} from "react";
+import Navigation from "./navigation.jsx";
 
 function Layout() {
     return (
@@ -31,41 +33,18 @@ function Layout() {
                                 <img className="size-10 select-none" src={Flower} alt="flowerLogo"/>
 
                                 <div className="flex justify-between flex-1 items-center ml-4">
-                                    <h1 className="jersey-10-regular gradient select-none text-4xl">Welcome to my portfolio</h1>
+                                    <h1 className="jersey-10-regular gradient select-none text-4xl">Welkom bij mijn
+                                        portfolio</h1>
                                     <Clock/>
                                 </div>
                             </div>
                         </div>
 
+                        <Navigation/>
 
-
-                        <div className="flex gap-2 flex-row items-start z-0 m-2">
-
-                            <div className="tab">
-                                <div className="bg-amber-100 h-10 w-32 rounded-tr-md folder border-[#372d36] border-solid border-2 ">
-                                    <Link to="/" className="pl-2 cursor-pointer jerseyTab select-none text-[#372d36]">About me</Link>
-                                </div>
-                            </div>
-
-                            <div className="tab">
-                                <div className="bg-amber-100 h-10 w-32 rounded-tr-md folder border-[#372d36] border-solid border-2 ">
-                                    <Link to="/my-projects" className="pl-2 cursor-pointer jerseyTab select-none text-[#372d36]">My projects</Link>
-                                </div>
-                            </div>
-
-                            <div className="tab">
-                                <div className="bg-amber-100 h-10 w-32 rounded-tr-md  folder  border-[#372d36] border-solid border-2 ">
-                                    <Link to="" className="pl-2 cursor-pointer jerseyTab select-none text-[#372d36]">Interests</Link>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="relative z-10 -mt-7   ml-2 mr-2 ">
-
-                            <div className="bg-amber-100 flex  border-[#372d36] border-solid border-2  rounded-b-md rounded-tr-md h-125 w-274   p-6 ">
-                                <div className="text-center">
-                                    <Outlet/>
-                                </div>
+                        <div className="bg-amber-100 flex h-fit w-fit -mt-3 rounded-b-md rounded-tr-md ml-2 mr-2">
+                            <div className="relative z-0 border-[#372d36] border-solid border-2 rounded-b-md rounded-tr-md h-125 w-274 overflow-hidden">
+                                <Outlet />
                             </div>
                         </div>
 
