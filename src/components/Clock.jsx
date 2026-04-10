@@ -1,7 +1,7 @@
 import '../index.css'
 import {useEffect, useState} from "react";
 
-function Clock() {
+export default function Clock() {
     const [time, setTime] = useState("");
     const [date, setDate] = useState("");
 
@@ -47,4 +47,4 @@ return (
 )
 }
 
-export default Clock
+

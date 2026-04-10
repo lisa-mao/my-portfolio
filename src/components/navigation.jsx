@@ -1,6 +1,6 @@
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 
-function Navigation() {
+export default function Navigation() {
 
     return (
         <>
@@ -13,7 +13,7 @@ function Navigation() {
                             <button id="About me">
                                 <Link to="/"
                                       className="pl-2 cursor-pointer jerseyTab select-none text-[#372d36]">Over
-                                    mij</Link>
+                                    Mij</Link>
                             </button>
                         </div>
                     </div>
@@ -24,7 +24,7 @@ function Navigation() {
                             <button>
                                 <Link to="/my-projects"
                                       className="pl-2 cursor-pointer jerseyTab select-none text-[#372d36]">Mijn
-                                    projecten</Link>
+                                    Projecten</Link>
                             </button>
                         </div>
                     </div>
@@ -34,7 +34,17 @@ function Navigation() {
                             className="bg-amber-100 h-10 w-33 rounded-tr-md  folder  border-[#372d36] border-solid border-2 ">
                             <button>
                                 <Link to="/skills"
-                                      className="pl-2 cursor-pointer jerseyTab select-none text-[#372d36]">Skills</Link>
+                                      className="pl-2 cursor-pointer jerseyTab select-none text-[#372d36]">Mijn Kwaliteiten</Link>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="tab">
+                        <div
+                            className="bg-amber-100 h-10 w-33 rounded-tr-md  folder  border-[#372d36] border-solid border-2 ">
+                            <button>
+                                <Link to="/tools"
+                                      className="pl-2 cursor-pointer jerseyTab select-none text-[#372d36]">Tools</Link>
                             </button>
                         </div>
                     </div>
@@ -53,4 +63,3 @@ function Navigation() {
     )
 }
 
-export default Navigation

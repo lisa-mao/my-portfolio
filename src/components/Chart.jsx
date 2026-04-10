@@ -18,7 +18,7 @@ ChartJS.register(
     Legend
 );
 
-function Chart() {
+export default function Chart() {
     const data = {
         labels: ['HTML', 'Tailwind CSS', 'JS', 'React', 'Express', 'Typescript'],
         datasets: [
@@ -78,4 +78,3 @@ function Chart() {
     )
 }
 
-export default Chart

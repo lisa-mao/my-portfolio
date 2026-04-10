@@ -3,10 +3,10 @@ import Flower from "../images/flowericon.png";
 import Clock from "./Clock.jsx";
 import AboutMe from "../pages/AboutMe.jsx";
 import {Link, Outlet} from "react-router-dom";
-import {useState} from "react";
+
 import Navigation from "./navigation.jsx";
 
-function Layout() {
+export default function Layout() {
     return (
         <>
             <main className="h-screen w-screen background flex justify-center items-center">
@@ -55,4 +55,3 @@ function Layout() {
     );
 }
 
-export default Layout
