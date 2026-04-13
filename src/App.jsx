@@ -1,48 +1,53 @@
-import { HashRouter} from 'react-router-dom';
-import Intro from "./Intro.jsx";
-import AboutMe from "./AboutMe.jsx";
-import MyProjects from "./MyProjects.jsx";
-import Contact from "./Contact.jsx";
-import {useState} from "react";
-import Sun from './images/sun.png'
+import { createHashRouter, HashRouter, RouterProvider} from 'react-router-dom';
+import './index.css'
+import AboutMe from "./pages/AboutMe.jsx";
+import Layout from "./components/Layout.jsx";
+import MyProjects from "./pages/MyProjects.jsx";
+import Skills from "./pages/Skills.jsx";
+import Contact from "./pages/Contact.jsx";
+import Tools from "./pages/Tools.jsx";
+import FigmaShowcase from "./pages/FigmaShowcase.jsx";
 
-function App() {
-    const [activeModal, setActiveModal] = useState(null)
+const router = createHashRouter([
+    {
+        element: <Layout/>,
+        children: [
+            {
+                path: "/",
+                element: <AboutMe/>
+            },
+            {
+                path: "/my-projects",
+                element: <MyProjects/>
+            },
+            {
+                path: "/skills",
+                element: <Skills/>
+            },
+            {
+                path: "/tools",
+                element: <Tools/>
+            },
+            {
+                path: "/figma-showcase",
+                element: <FigmaShowcase/>
+            },
+            {
+                path: "/contact",
+                element: <Contact/>
+            },
 
-    const closeModal = () => setActiveModal(null)
+        ]
+
+
+    }
+], )
+export default function App() {
 
     return (
-        <HashRouter>
-            <main className="backgroundDay bg-cover bg-no-repeat h-screen w-screen">
-                <img src={Sun} alt="lightmode" className="size-40 object-top-right hover:cursor-pointer
-                 scale-50"/>
-                <section className="  flex justify-center items-center ">
 
+            <RouterProvider router={router} />
 
-                    <div className="relative">
-                        <Intro onOpen={setActiveModal}/>
-
-                        {activeModal === 'aboutMe' && (
-                            <AboutMe onClose={(closeModal)}/>
-                        )}
-
-                        {activeModal === 'myProjects' && (
-                            <MyProjects onClose={(closeModal)}/>
-                        )}
-
-                        {activeModal === 'contact' && (
-                            <Contact onClose={(closeModal)}/>
-                        )}
-
-
-                    </div>
-
-
-                </section>
-                {/*<Footer/>*/}
-            </main>
-        </HashRouter>
     )
 }
 
-export default App

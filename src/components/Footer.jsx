@@ -1,4 +1,4 @@
-function Footer() {
+export default function Footer() {
     return (
         <section className="">
             <h1 id="footer">
@@ -7,5 +7,3 @@ function Footer() {
         </section>
     );
 }
-
-export default Footer
