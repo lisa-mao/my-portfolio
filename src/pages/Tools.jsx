@@ -1,5 +1,4 @@
-
-import { GiNewShoot } from "react-icons/gi";
+import {GiNewShoot} from "react-icons/gi";
 import {LuEye} from "react-icons/lu";
 import {FaPeopleGroup} from "react-icons/fa6";
 import {Link} from "react-router-dom";
@@ -15,41 +14,47 @@ export default function Tools() {
                 </button>
             </div>
             <section className=" grid grid-rows-5 items-center gap-1 h-full w-full text-black">
-                <div className="p-4 m-5 flex items-start gap-4 border-2 border-black border-dotted rounded-2xl bg-white">
+                <div
+                    className="p-4 m-5 flex items-start gap-4 border-2 border-black border-dotted rounded-2xl bg-white">
                     <div className="text-3xl mt-1 shrink-0 border-2 border-black border-solid text-[#372d36]">
-                        <LuEye />
+                        <LuEye/>
                     </div>
                     <div>
                         <h2 className="noto-sans-jp font-bold text-sm tracking-wide">Phpstorm</h2>
                         <p className="noto-sans-jp text-xs leading-relaxed text-gray-700">
-                            Mijn meest gebruikte IDE, hier heb ik het langste mee geprogrammeerd (alle projecten zijn met deze IDE gemaakt).
+                            Mijn meest gebruikte IDE, hier heb ik het langste mee geprogrammeerd (alle projecten zijn
+                            met deze IDE gemaakt).
                         </p>
                         <button>
                             <Link to="/figma-showcase"
-                                  className=" cursor-pointer jerseyTab select-none text-[#372d36]" alt="klik hier om mijn projecten te bekijken!">Bekijk projecten</Link>
+                                  className=" cursor-pointer jerseyTab select-none text-[#372d36]"
+                                  alt="klik hier om mijn projecten te bekijken!">Bekijk projecten</Link>
                         </button>
                     </div>
                 </div>
 
-                <div className="p-4 m-5 flex items-start gap-4 border-2 border-black border-dotted rounded-2xl bg-white">
+                <div
+                    className="p-4 m-5 flex items-start gap-4 border-2 border-black border-dotted rounded-2xl bg-white">
                     <div className="text-3xl mt-1 shrink-0 border-2 border-black border-solid text-[#372d36]">
-                        <FaPeopleGroup />
+                        <FaPeopleGroup/>
                     </div>
                     <div>
                         <h2 className="noto-sans-jp font-bold text-sm tracking-wide">Figma</h2>
                         <p className="noto-sans-jp text-xs leading-relaxed text-gray-700">
-Ik design mijn UI/UX met Figma hier zijn een paar voorbeelden:
+                            Ik design mijn UI/UX met Figma hier zijn een paar voorbeelden:
                         </p>
                         <button>
                             <Link to="/figma-showcase"
-                                  className="pl-2 cursor-pointer jerseyTab select-none text-[#372d36]" alt="klik hier om mijn figma voorbeelden te zien!">Klik hier</Link>
+                                  className="pl-2 cursor-pointer jerseyTab select-none text-[#372d36]"
+                                  alt="klik hier om mijn figma voorbeelden te zien!">Klik hier</Link>
                         </button>
                     </div>
                 </div>
 
-                <div className="p-4 m-5 flex items-start gap-4 border-2 border-black border-dotted rounded-2xl bg-white">
+                <div
+                    className="p-4 m-5 flex items-start gap-4 border-2 border-black border-dotted rounded-2xl bg-white">
                     <div className="text-3xl mt-1 shrink-0 border-2 border-black border-solid text-[#372d36]">
-                        <GiNewShoot />
+                        <GiNewShoot/>
                     </div>
                     <div>
                         <h2 className="noto-sans-jp font-bold text-sm tracking-wide">Trello & Github</h2>
