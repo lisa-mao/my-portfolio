@@ -1,34 +1,8 @@
-import homepage from '../images/loongcakes/homepage.png';
-import myRecipe from '../images/loongcakes/myRecipe.png';
-import aboutMe from '../images/loongcakes/aboutUs.png';
-import contact from '../images/loongcakes/contact.png';
-import createRecipe from '../images/loongcakes/createRecipe.png';
-import showRecipe from '../images/loongcakes/showRecipe.png';
+
 import {useRef} from "react";
 import {ChevronLeft, ChevronRight} from 'lucide-react';
 
-export default function ProjectImagesCarousel() {
-    const images = [
-        {
-            id: 1, src: homepage
-        },
-        {
-            id: 2, src: myRecipe
-        },
-        {
-            id: 3, src: showRecipe
-        },
-        {
-            id: 4, src: createRecipe
-        },
-        {
-            id: 5, src: aboutMe
-        },
-        {
-            id: 6, src: contact
-        },
-
-    ]
+export default function ProjectImagesCarousel({images = []}) {
 
     const scrollRef = useRef(null)
     const scroll = (direction) => {

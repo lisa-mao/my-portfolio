@@ -6,7 +6,7 @@ import MyProjects from "./pages/MyProjects.jsx";
 import Skills from "./pages/Skills.jsx";
 import Contact from "./pages/Contact.jsx";
 import Tools from "./pages/Tools.jsx";
-import FigmaShowcase from "./pages/FigmaShowcase.jsx";
+import {FigmaShowcase} from "./pages/FigmaShowcase.jsx";
 
 const router = createHashRouter([
     {

@@ -9,9 +9,9 @@ export default function Skills() {
         <main>
             <div className="pl-4 pr-4 m-3 flex items-start gap-4 justify-between ">
             <h1 className="jersey-10-regular">Zo breng ik ideeën tot leven</h1>
-                <button className="border-2 border-black border-solid rounded-xl">
+                <button className="border-2 border-black border-solid rounded-xl bg-white">
                     <Link to="/tools"
-                          className=" p-3 cursor-pointer noto-sans-jp select-none text-[#372d36] ">Tools waar ik gebruik van maak</Link>
+                          className=" p-3 cursor-pointer noto-sans-jp select-none text-[#372d36]  ">Tools waar ik gebruik van maak</Link>
                 </button>
         </div>
         <section className=" grid grid-rows-3 items-center gap-1 h-full w-full text-black">
