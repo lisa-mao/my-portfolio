@@ -14,7 +14,7 @@ export default function Skills() {
                           className=" p-3 cursor-pointer noto-sans-jp select-none text-[#372d36] ">Tools waar ik gebruik van maak</Link>
                 </button>
         </div>
-        <section className=" grid grid-rows-5 items-center gap-1 h-full w-full text-black">
+        <section className=" grid grid-rows-3 items-center gap-1 h-full w-full text-black">
             <div className="p-4 m-5 flex items-start gap-4 border-2 border-black border-dotted rounded-2xl bg-white">
                 <div className="text-3xl mt-1 shrink-0 border-2 border-black border-solid text-[#372d36]">
                     <LuEye />

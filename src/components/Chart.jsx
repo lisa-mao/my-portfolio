@@ -20,11 +20,11 @@ ChartJS.register(
 
 export default function Chart() {
     const data = {
-        labels: ['HTML', 'Tailwind CSS', 'JS', 'React', 'Express', 'Typescript'],
+        labels: ['HTML', 'Tailwind CSS', 'JS', 'React.js', 'Express'],
         datasets: [
             {
                 label: 'Skillpoints',
-                data: [8, 8, 5, 6, 5, 8],
+                data: [8, 8, 6, 6, 5],
                 backgroundColor: 'rgb(197,169,191)',
                 borderColor: 'rgb(55,45,54)',
                 borderWidth: 1,

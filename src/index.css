@@ -23,6 +23,13 @@
     font-style: normal;
 }
 
+.jersey-10-projectLabels {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 440;
+    font-size: xx-large;
+    font-style: normal;
+}
+
 .jersey {
     font-family: "Jersey 10", sans-serif;
     font-weight: 440;
@@ -52,6 +59,13 @@
                    font-style: normal;
                }
 
+.noto-sans-jp-label2 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: large;
+    font-weight: 440;
+    font-style: italic;
+}
+
 .folder {
     clip-path: polygon(0 0 , 92% 0, 98% 98%, 100% 100%,0 98% ,0 100%);
     height: 39px;
@@ -66,16 +80,15 @@
     width: 140px;
 }
 
-
-/*:root{*/
-/*    --green-border: #A2C579;*/
-/*    --white-border: #FFFFDD;*/
-/*    --white-bg: #FFFFDD;*/
-/*}*/
-
-/*[data-theme="dark"] {*/
-/*    --greenborder: #E1FFBB;*/
-/*    --darkblue-border: #074799;*/
-/*    --darkblue-bg: #074799;*/
-/*    --text-color: #E1FFBB;*/
-/*}*/
+@theme {
+    --animate-wiggle: wiggle 0.9s ease-in-out infinite;
+    @keyframes wiggle {
+        0%,
+        100% {
+            transform: rotate(-6deg);
+        }
+        50% {
+            transform: rotate(6deg);
+        }
+    }
+}
